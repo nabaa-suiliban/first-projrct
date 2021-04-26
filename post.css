@@ -1,0 +1,119 @@
+*{
+    margin: auto;
+}
+
+#baa {background-color:red;}
+
+  
+
+
+header{background-color: rgb(32, 20, 44);
+height: 40px;
+overflow: hidden;
+padding: 20px;}
+header h1 {text-align: center;
+font-family: calibri;
+color: saddlebrown;}
+#lolo{ color: red;
+text-align: center;}
+.logo
+{color: rgb(64, 34, 184);}
+header nav{ float: right ;
+background-color:#afa5a5;}
+header nav ul{ list-style-type: none;}
+header nav ul li{ float: left;
+margin-right: 325px;}
+a:link{ text-decoration: none;
+text-transform: uppercase;
+font-family:calibri;
+color:#43b7e4;}
+a:haover{ text-decoration: underline;
+color: brown;
+transition: 1s;}
+ 
+#lolo image   { background-color:#414141;
+height: 500px;
+background: url('images/123.jpg')no-repeat;
+background-size: 100%;
+
+}
+
+#features{text-align: center;
+margin: 50px;}
+#features ul{list-style-type: none;
+overflow: hidden;}
+#features ul li{float: left;
+background-color: #fff;
+border: 1px solid #ccc;
+height: 400px;
+overflow: hidden;
+width: 280px;
+margin-right: 10px; 
+padding: 10px;
+}
+#features{
+ background-size: 100px;
+background-color:#ccc;}
+#content{
+margin-top: 15px;
+padding-left: 100px;
+padding-right: 100px;}
+
+article{overflow: hidden;
+background-color: #e4f3f9;
+margin-bottom: 10px;
+border: 1px solid #BCE2F1;
+padding: 20px;}
+
+article h3 a:link{color: #3eadd9;
+border-bottom:1 px dotted #3eadd9;
+font-size: 24pt;
+text-transform: uppercase;
+margin-bottom: 10px;}
+article h3 a:hover{text-decoration: none;
+color: ;}
+article p{font-family: Calibri;
+font-size: 16px;
+float: left;
+width: 65%;
+text-align: justify; }
+article img{float: right;
+background-color: #fff;
+border: 1px solid #ccc;
+padding: 7px;
+width: 400px;
+height: 300px;
+}
+article a.Read{float: right;
+margin-right: 20px;
+background-color: #fff;
+border: 1px solid #54b6dd;
+padding: 7px;
+margin-top: 10px;}
+/* footer */
+footer{background-color:rgb(32, 20, 44);
+overflow: hidden;
+padding-top:40px;
+padding-left: 300px ;
+border-top:2px solid #ccc ;
+}
+#frist-footer{overflow: hidden;
+  margin-bottom: 20px;
+border-bottom: 2px solid #18607d;
+padding-bottom: 10px;}
+#frist-footer ul{
+  list-style-type: none;
+  float: left;
+width: 260px;
+
+margin-right: 10px;
+}
+#frist-footer ul li{text-indent: 20px;
+margin-top: 10px;}
+#frist-footer h4{color:#18607d;
+  border-bottom: 1px dotted #18607d;
+  
+}
+#second footer{text-align: center;
+color: #5883ff;
+padding-bottom: 20px;}

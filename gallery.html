@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> gallery </title>
+
+    <!-- magnific-popup css cdn link  -->
+    <link rel="stylesheet" href="pop.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="gallery.css">
+
+    <!--lightbox effect-->
+    <link rel="stylesheet" href=lightbox.css">
+
+
+</head>
+<body>
+
+
+<div class="gallery">
+
+    <ul class="controls">
+        <li class="buttons active" data-filter="all">all</li>
+        <li class="buttons" data-filter="ice-cream">ice-cream</li>
+        <li class="buttons" data-filter="chocolate">chocolate</li>
+        <li class="buttons" data-filter="cake">cake</li>
+        <li class="buttons" data-filter="juice">juice</li>
+        <li class="buttons" data-filter="sandwich">sandwich</li>
+    </ul>
+
+    <div class="image-container">
+
+        <a href="gallery img/ice-cream1.jpg" class="image ice-cream">
+            <img src="gallery img/ice-cream1.jpg" alt="ice-cream1">
+        </a>
+        <a href="gallery img/ice-cream2.jpg" class="image ice-cream">
+            <img src="gallery img/ice-cream2.jpg" alt="ice-cream2">
+        </a>
+        <a href="gallery img/ice-cream3.jpg" class="image ice-cream">
+            <img src="gallery img/ice-cream3.jpg" alt="ice-cream3">
+        </a>
+
+        <a href="gallery img/chocolate1.jpg" class="image chocolate">
+            <img src="gallery img/chocolate1.jpg" alt="chocolate1">
+        </a>
+        <a href="gallery img/chocolate1.jpg" class="image chocolate">
+            <img src="gallery img/chocolate1.jpg" alt="chocolate1">
+        </a>
+
+        <a href="gallery img/cake1.jpg" class="image cake">
+            <img src="gallery img/cake1.jpg" alt="cake1">
+        </a>
+        <a href="gallery img/cake2.jpg" class="image cake">
+            <img src="gallery img/cake2.jpg" alt="cake2">
+        </a>
+        <a href="gallery img/cake3.jpg" class="image cake">
+            <img src="gallery img/cake3.jpg" alt="cake3">
+        </a>
+    </div>
+
+</div>
+
+
+<!-- jquery cdn link  -->
+<script src="jquery.min.js"></script>
+
+<!-- magnific popup js cdn link  -->
+<script src="poup.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    $('.buttons').click(function(){
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+        var filter = $(this).attr('data-filter')
+
+        if(filter == 'all'){
+            $('.image').show(400);
+        }else{
+            $('.image').not('.'+filter).hide(200);
+            $('.image').filter('.'+filter).show(400);
+        }
+
+    });
+
+    $('.gallery').magnificPopup({
+
+        delegate:'a',
+        type:'image',
+        gallery:{
+            enabled:true
+        }
+
+    });
+
+});
+
+</script>
+
+ 
+    
+</body>
+</html>
